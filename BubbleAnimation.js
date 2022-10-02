@@ -48,6 +48,13 @@ class BubbleAnimation{
     }
 
     bubbleAnimation(){
+        let canvasComputedStyle = window.getComputedStyle(this.#__canvas);
+        let theWidth = canvasComputedStyle.width;
+        let theHeight = canvasComputedStyle.height;
+
+        this.#__canvas.width = Number(theWidth.substring(0, theWidth.length - 2));
+        this.#__canvas.height = Number(theHeight.substring(0, theHeight.length - 2));
+
         this.#__canvasPointer.beginPath();
         this.#__canvasPointer.fillStyle = this.#__bubblesBackground;
         this.#__canvasPointer.rect(0,0,this.#__canvas.width, this.#__canvas.height);

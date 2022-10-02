@@ -19,21 +19,11 @@ First of all, you need import the BubbleAnimation.js to your .html file and then
         // Get canvas element
         let canvas = document.getElementById("target_canvas");
 
-        /* 
-            You should define the canvas size here,
-            if the canvas's CSS is defined as dynamic 
-            size like using '%' you could use 'getComputedStyle'
-            to redefine these variables every time that be
-            changed
-        */ 
-        canvas.width = 500;
-        canvas.height = 500;
-
         /* Call the animation class properly, passing
         the canvas element, all possible colors of bubbles,
         max bubble's radius, growing step of bubbles, bubbles's
         spawn rate and then the background color*/
-        new BubbleAnimation(canvas, ["black", "purple", "gray", "blue", "red"], 30, 0.2, 600, "darkslateblue");
+        new BubbleAnimation(target, ["#47a025", "#ffffff", "#9000b3", "#007ea7"], 20, 0.2, 200, "#1d1e2c");
 
         // The program should run now :)
     </script>
