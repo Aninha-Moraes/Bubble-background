@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Bubble background</h1>
-    <img height="400px" src="./assets/BubbleDemonstration.png">
+    <img height="300px" src="./assets/BubbleDemonstration.png">
 </div>
 
 <br/>
